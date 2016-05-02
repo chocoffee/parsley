@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="uzura.ttf">
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dr_Alea" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UBZ-uU-VAR">
+                                <rect key="frame" x="181" y="0.0" width="238" height="411"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="238" id="T6r-hG-IE5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Now Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdu-Yh-IEu">
+                                <rect key="frame" x="243" y="536" width="114" height="21"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiG-AG-9w2">
+                                <rect key="frame" x="277" y="471" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="bCN-nI-t45" kind="show" id="mzT-ZK-kCa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.74026007401315785" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="UBZ-uU-VAR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="D78-aX-R9L"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Fdu-Yh-IEu" secondAttribute="bottom" constant="43" id="Lfe-2M-n0E"/>
+                            <constraint firstItem="Fdu-Yh-IEu" firstAttribute="centerX" secondItem="UBZ-uU-VAR" secondAttribute="centerX" id="Uye-BY-WNN"/>
+                            <constraint firstItem="UBZ-uU-VAR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-94.5" id="VuZ-KS-FZi"/>
+                            <constraint firstItem="UBZ-uU-VAR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mz5-ir-C7g"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="377"/>
+        </scene>
+        <!--Dr.Alea-->
+        <scene sceneID="Aj2-23-7qP">
+            <objects>
+                <viewController id="qaS-dO-p3o" customClass="MainViewController" customModule="Dr_Alea" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ggd-Ju-9ut"/>
+                        <viewControllerLayoutGuide type="bottom" id="o3c-SH-u8H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Xd-qs-YJw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AdP-BE-pif">
+                                <rect key="frame" x="100" y="72" width="400" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="NSd-dL-cxA"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FnR-lG-Qtn">
+                                <rect key="frame" x="248" y="480" width="105" height="30"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="15"/>
+                                <state key="normal" title="スポットの検索">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="s2I-3e-QdJ" kind="show" id="Omt-ea-ZXl"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="29" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MTR-3D-M55">
+                                <rect key="frame" x="125" y="97" width="350" height="350"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="PC1-nS-hUt"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsCell" rowHeight="29" id="yPe-Q7-svC" customClass="NewsTableViewCell" customModule="Dr_Alea" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="350" height="29"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yPe-Q7-svC" id="tkL-kf-jWx">
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="28"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r1v-20-lWh">
+                                                    <rect key="frame" x="8" y="0.0" width="77" height="28"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hK-BH-KUK">
+                                                    <rect key="frame" x="104" y="3" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="r1v-20-lWh" firstAttribute="top" secondItem="tkL-kf-jWx" secondAttribute="top" id="1oO-A9-Kxp"/>
+                                                <constraint firstItem="2hK-BH-KUK" firstAttribute="centerX" secondItem="tkL-kf-jWx" secondAttribute="centerX" id="Bfa-J3-E5i"/>
+                                                <constraint firstItem="2hK-BH-KUK" firstAttribute="leading" secondItem="r1v-20-lWh" secondAttribute="trailing" constant="19" id="HcY-j7-sdn"/>
+                                                <constraint firstItem="2hK-BH-KUK" firstAttribute="centerY" secondItem="r1v-20-lWh" secondAttribute="centerY" id="KXW-kG-4ac"/>
+                                                <constraint firstAttribute="bottom" secondItem="r1v-20-lWh" secondAttribute="bottom" id="O0X-Rx-u2F"/>
+                                                <constraint firstItem="r1v-20-lWh" firstAttribute="leading" secondItem="tkL-kf-jWx" secondAttribute="leadingMargin" id="tHO-7N-6Vx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="newsImg" destination="r1v-20-lWh" id="itm-Q9-IuH"/>
+                                            <outlet property="newsLabel" destination="2hK-BH-KUK" id="wCj-dz-CNN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.74026007400000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="MTR-3D-M55" firstAttribute="centerY" secondItem="AdP-BE-pif" secondAttribute="centerY" id="1n5-ix-r3y"/>
+                            <constraint firstItem="FnR-lG-Qtn" firstAttribute="top" secondItem="AdP-BE-pif" secondAttribute="bottom" constant="8" id="Ec8-Bw-fca"/>
+                            <constraint firstItem="MTR-3D-M55" firstAttribute="centerX" secondItem="FnR-lG-Qtn" secondAttribute="centerX" id="UNd-wl-LxM"/>
+                            <constraint firstItem="MTR-3D-M55" firstAttribute="centerX" secondItem="AdP-BE-pif" secondAttribute="centerX" id="kRH-Ut-nXu"/>
+                            <constraint firstItem="AdP-BE-pif" firstAttribute="centerX" secondItem="2Xd-qs-YJw" secondAttribute="centerX" id="oXd-DH-Ho0"/>
+                            <constraint firstItem="MTR-3D-M55" firstAttribute="top" secondItem="ggd-Ju-9ut" secondAttribute="bottom" constant="33" id="qx7-xV-ydu"/>
+                            <constraint firstItem="AdP-BE-pif" firstAttribute="top" secondItem="ggd-Ju-9ut" secondAttribute="bottom" constant="8" id="tQO-5K-5Ec"/>
+                            <constraint firstItem="AdP-BE-pif" firstAttribute="centerY" secondItem="2Xd-qs-YJw" secondAttribute="centerY" constant="-28" id="z4N-ES-CS3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dr.Alea" id="2TJ-5O-qbc"/>
+                    <connections>
+                        <outlet property="newsTableView" destination="MTR-3D-M55" id="s4T-ON-SeL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cMW-wU-gmr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1795" y="377"/>
+        </scene>
+        <!--Select Search Type View Controller-->
+        <scene sceneID="1wX-fo-M43">
+            <objects>
+                <viewController id="s2I-3e-QdJ" customClass="SelectSearchTypeViewController" customModule="Dr_Alea" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qBb-HO-qLT"/>
+                        <viewControllerLayoutGuide type="bottom" id="gvn-h2-V5p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="woi-Ki-uDC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fk6-Qf-vF5">
+                                <rect key="frame" x="250" y="120" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="7W6-qi-Y4s"/>
+                                    <constraint firstAttribute="height" constant="30" id="VmS-Ug-amD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="15"/>
+                                <state key="normal" title=" ジャンル検索">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7t0-G7-yNY" kind="show" identifier="toGanreSegue" id="XWb-Wd-bYc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJc-25-XOt">
+                                <rect key="frame" x="248" y="225" width="105" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3dD-bG-693"/>
+                                    <constraint firstAttribute="width" constant="105" id="wZo-bk-ioq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="15"/>
+                                <state key="normal" title="キーワード検索">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7Tr-dG-3jo" kind="show" id="C15-C8-8Bb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B12-CG-7E7">
+                                <rect key="frame" x="248" y="332" width="105" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="GSd-ge-gSX"/>
+                                    <constraint firstAttribute="height" constant="30" id="Xs9-5K-J6i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="15"/>
+                                <state key="normal" title="都道府県別検索">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="myb-ko-4nW" kind="show" id="qfC-jT-M6U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8K-Iv-Rb3">
+                                <rect key="frame" x="235" y="439" width="131" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="Jem-zj-ZHF"/>
+                                    <constraint firstAttribute="height" constant="30" id="ekp-q6-18J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="15"/>
+                                <state key="normal" title="周辺検索（GPS）">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iKB-Zs-9G2" kind="show" id="Ow6-H9-Ops"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.74026007400000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="XJc-25-XOt" firstAttribute="top" secondItem="fk6-Qf-vF5" secondAttribute="bottom" constant="75" id="1v0-CK-z8x"/>
+                            <constraint firstItem="fk6-Qf-vF5" firstAttribute="centerX" secondItem="woi-Ki-uDC" secondAttribute="centerX" id="7qq-Pd-YZt"/>
+                            <constraint firstItem="XJc-25-XOt" firstAttribute="leading" secondItem="fk6-Qf-vF5" secondAttribute="leading" constant="-2" id="7u9-8i-qte"/>
+                            <constraint firstItem="fk6-Qf-vF5" firstAttribute="centerY" secondItem="woi-Ki-uDC" secondAttribute="centerY" constant="-165" id="O8u-C4-6b7"/>
+                            <constraint firstItem="B12-CG-7E7" firstAttribute="top" secondItem="XJc-25-XOt" secondAttribute="bottom" constant="77" id="ftJ-2a-yDb"/>
+                            <constraint firstItem="B12-CG-7E7" firstAttribute="leading" secondItem="XJc-25-XOt" secondAttribute="leading" id="gBn-2H-1Wy"/>
+                            <constraint firstItem="Z8K-Iv-Rb3" firstAttribute="top" secondItem="B12-CG-7E7" secondAttribute="bottom" constant="77" id="oqL-ge-XyT"/>
+                            <constraint firstItem="B12-CG-7E7" firstAttribute="leading" secondItem="Z8K-Iv-Rb3" secondAttribute="leading" constant="13" id="sa8-KQ-j8t"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="323-2u-3Hs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2460" y="377"/>
+        </scene>
+        <!--Genre Modal View Controller-->
+        <scene sceneID="svV-Sj-r38">
+            <objects>
+                <viewController id="7t0-G7-yNY" customClass="GenreModalViewController" customModule="Dr_Alea" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JUb-Fs-10b"/>
+                        <viewControllerLayoutGuide type="bottom" id="cCL-1a-qPU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Bh-6B-asz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnN-ON-bUq">
+                                <rect key="frame" x="249" y="45" width="102" height="21"/>
+                                <string key="text" base64-UTF8="YES">
+44K444Oj44Oz44OrCOaknOe0og
+</string>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="選択してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2da-7Q-Jo0">
+                                <rect key="frame" x="232" y="82" width="136" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="AYk-jw-q5p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bno-vh-eLK">
+                                <rect key="frame" x="0.0" y="192" width="600" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXo-NL-3pb">
+                                <rect key="frame" x="285" y="432" width="30" height="30"/>
+                                <state key="normal" title="検索">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rez-vp-DIK" kind="show" identifier="byGanre" id="cwZ-kT-nE6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.74026007400000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bno-vh-eLK" firstAttribute="centerY" secondItem="5Bh-6B-asz" secondAttribute="centerY" id="38D-Zw-pBX"/>
+                            <constraint firstItem="cnN-ON-bUq" firstAttribute="centerX" secondItem="2da-7Q-Jo0" secondAttribute="centerX" id="91k-6a-qPI"/>
+                            <constraint firstItem="Bno-vh-eLK" firstAttribute="leading" secondItem="5Bh-6B-asz" secondAttribute="leading" id="Fwg-vq-jn6"/>
+                            <constraint firstItem="cnN-ON-bUq" firstAttribute="centerX" secondItem="5Bh-6B-asz" secondAttribute="centerX" id="IcL-gF-tAY"/>
+                            <constraint firstItem="cnN-ON-bUq" firstAttribute="centerY" secondItem="5Bh-6B-asz" secondAttribute="centerY" constant="-244" id="JFk-xq-zHW"/>
+                            <constraint firstItem="cCL-1a-qPU" firstAttribute="top" secondItem="nXo-NL-3pb" secondAttribute="bottom" constant="138" id="K10-w1-sXp"/>
+                            <constraint firstItem="Bno-vh-eLK" firstAttribute="centerX" secondItem="2da-7Q-Jo0" secondAttribute="centerX" id="Kwl-qj-e8S"/>
+                            <constraint firstItem="2da-7Q-Jo0" firstAttribute="top" secondItem="cnN-ON-bUq" secondAttribute="bottom" constant="16" id="PTK-A5-X7Y"/>
+                            <constraint firstItem="nXo-NL-3pb" firstAttribute="centerX" secondItem="2da-7Q-Jo0" secondAttribute="centerX" id="cHg-kl-05p"/>
+                            <constraint firstItem="cnN-ON-bUq" firstAttribute="top" secondItem="JUb-Fs-10b" secondAttribute="bottom" constant="-19" id="krr-I0-Str"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ganrePicker" destination="Bno-vh-eLK" id="dSt-OL-iCc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pe4-gc-6cx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3164" y="112"/>
+        </scene>
+        <!--Enter Keyword View Controller-->
+        <scene sceneID="CGZ-pB-0TI">
+            <objects>
+                <viewController id="7Tr-dG-3jo" customClass="EnterKeywordViewController" customModule="Dr_Alea" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hZX-Pa-Ndd"/>
+                        <viewControllerLayoutGuide type="bottom" id="uiO-Io-Mkx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W4u-dF-mkI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="キーワード検索" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NID-qc-3Ct">
+                                <rect key="frame" x="241" y="100" width="119" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eri-je-if6">
+                                <rect key="frame" x="20" y="236" width="560" height="97"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="Yv7-LQ-UDI"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="キーワードを入力してください" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sRo-dz-ctg">
+                                <rect key="frame" x="46" y="270" width="509" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YfV-dC-PVC">
+                                <rect key="frame" x="285" y="409" width="30" height="30"/>
+                                <state key="normal" title="検索">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rez-vp-DIK" kind="show" identifier="byKeyword" id="lj8-xH-pW1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.74117647058823533" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Eri-je-if6" firstAttribute="leading" secondItem="W4u-dF-mkI" secondAttribute="leadingMargin" id="GIX-GL-8dq"/>
+                            <constraint firstItem="YfV-dC-PVC" firstAttribute="centerX" secondItem="sRo-dz-ctg" secondAttribute="centerX" id="YHU-Ei-B3L"/>
+                            <constraint firstItem="NID-qc-3Ct" firstAttribute="centerX" secondItem="W4u-dF-mkI" secondAttribute="centerX" id="ZTp-lu-xxA"/>
+                            <constraint firstItem="sRo-dz-ctg" firstAttribute="leading" secondItem="W4u-dF-mkI" secondAttribute="leadingMargin" constant="26" id="akD-Vj-Iyd"/>
+                            <constraint firstItem="Eri-je-if6" firstAttribute="centerX" secondItem="NID-qc-3Ct" secondAttribute="centerX" id="cO3-gn-1Yk"/>
+                            <constraint firstItem="NID-qc-3Ct" firstAttribute="centerY" secondItem="W4u-dF-mkI" secondAttribute="centerY" constant="-189.5" id="dvw-JV-hDl"/>
+                            <constraint firstItem="sRo-dz-ctg" firstAttribute="centerX" secondItem="Eri-je-if6" secondAttribute="centerX" id="kUB-BW-6Kv"/>
+                            <constraint firstItem="YfV-dC-PVC" firstAttribute="top" secondItem="Eri-je-if6" secondAttribute="bottom" constant="76" id="pqh-SX-HFQ"/>
+                            <constraint firstItem="uiO-Io-Mkx" firstAttribute="top" secondItem="Eri-je-if6" secondAttribute="bottom" constant="267" id="xRw-Ln-2zk"/>
+                            <constraint firstItem="sRo-dz-ctg" firstAttribute="centerY" secondItem="Eri-je-if6" secondAttribute="centerY" id="zt3-7v-wvq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="keywordField" destination="sRo-dz-ctg" id="dkP-zB-8kH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6kd-Wg-5WO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3164" y="814"/>
+        </scene>
+        <!--Select Prefectures View Controller-->
+        <scene sceneID="ANO-HV-mtr">
+            <objects>
+                <viewController id="myb-ko-4nW" customClass="SelectPrefecturesViewController" customModule="Dr_Alea" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ax7-Yb-y83"/>
+                        <viewControllerLayoutGuide type="bottom" id="jha-46-loj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ke5-Az-rUf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="都道府県別検索" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Omo-ET-Vvk">
+                                <rect key="frame" x="241" y="101" width="119" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ism-99-b2k">
+                                <rect key="frame" x="0.0" y="192" width="600" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMc-Qe-PdT">
+                                <rect key="frame" x="285" y="439" width="30" height="30"/>
+                                <state key="normal" title="検索">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rez-vp-DIK" kind="show" identifier="byPrefacture" id="uaV-lx-JCf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.74117647060000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ism-99-b2k" firstAttribute="centerY" secondItem="Ke5-Az-rUf" secondAttribute="centerY" id="HWu-49-dRE"/>
+                            <constraint firstItem="LMc-Qe-PdT" firstAttribute="top" secondItem="Ism-99-b2k" secondAttribute="bottom" constant="31" id="IdK-S9-XRc"/>
+                            <constraint firstItem="Omo-ET-Vvk" firstAttribute="centerY" secondItem="Ke5-Az-rUf" secondAttribute="centerY" constant="-188.5" id="Pfh-rH-xc5"/>
+                            <constraint firstItem="Ism-99-b2k" firstAttribute="centerX" secondItem="Omo-ET-Vvk" secondAttribute="centerX" id="YYy-G7-d5O"/>
+                            <constraint firstItem="Omo-ET-Vvk" firstAttribute="centerX" secondItem="Ke5-Az-rUf" secondAttribute="centerX" id="c6g-Hr-BiZ"/>
+                            <constraint firstItem="Ism-99-b2k" firstAttribute="leading" secondItem="Ke5-Az-rUf" secondAttribute="leading" id="ruD-jc-9He"/>
+                            <constraint firstItem="LMc-Qe-PdT" firstAttribute="centerX" secondItem="Ism-99-b2k" secondAttribute="centerX" id="yvn-E5-SGy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="prefacturesPicker" destination="Ism-99-b2k" id="ptN-qn-GNl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ek-cb-PyW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3164" y="1510"/>
+        </scene>
+        <!--Search With Map View Controller-->
+        <scene sceneID="pa2-1i-JjF">
+            <objects>
+                <viewController id="iKB-Zs-9G2" customClass="SearchWithMapViewController" customModule="Dr_Alea" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w3Z-cB-aX0"/>
+                        <viewControllerLayoutGuide type="bottom" id="9vO-zT-Ecc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BzK-TZ-8IO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周辺検索" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGJ-2t-NDc">
+                                <rect key="frame" x="266" y="68" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="01d-Vz-Epr">
+                                <rect key="frame" x="20" y="97" width="560" height="377"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.74117647060000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="01d-Vz-Epr" firstAttribute="leading" secondItem="BzK-TZ-8IO" secondAttribute="leadingMargin" id="DoF-lN-jPy"/>
+                            <constraint firstItem="01d-Vz-Epr" firstAttribute="centerX" secondItem="QGJ-2t-NDc" secondAttribute="centerX" id="a5K-MU-n4M"/>
+                            <constraint firstItem="QGJ-2t-NDc" firstAttribute="centerY" secondItem="BzK-TZ-8IO" secondAttribute="centerY" constant="-221.5" id="ccO-Uu-Rlh"/>
+                            <constraint firstItem="01d-Vz-Epr" firstAttribute="top" secondItem="QGJ-2t-NDc" secondAttribute="bottom" constant="8" symbolic="YES" id="eWZ-8M-iwX"/>
+                            <constraint firstItem="QGJ-2t-NDc" firstAttribute="centerX" secondItem="BzK-TZ-8IO" secondAttribute="centerX" id="mhX-8s-08g"/>
+                            <constraint firstItem="9vO-zT-Ecc" firstAttribute="top" secondItem="01d-Vz-Epr" secondAttribute="bottom" constant="126" id="qb1-JY-KF2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="01d-Vz-Epr" id="HXP-ra-vZj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fzf-rd-mo4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3164" y="2178"/>
+        </scene>
+        <!--Search Result View Controller-->
+        <scene sceneID="ddk-8E-aLj">
+            <objects>
+                <viewController id="rez-vp-DIK" customClass="SearchResultViewController" customModule="Dr_Alea" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qEV-AV-0Hd"/>
+                        <viewControllerLayoutGuide type="bottom" id="gyf-lt-RbP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qOR-lH-uy3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kgg-T3-yrx">
+                                <rect key="frame" x="20" y="106" width="560" height="474"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="resultCell" id="e3M-fw-gfn" customClass="SearchResultTableViewCell" customModule="Dr_Alea" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="560" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e3M-fw-gfn" id="8nA-p8-ZNo">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Xs-82-t1p">
+                                                    <rect key="frame" x="24" y="11" width="55" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="55" id="h2h-IB-3yS"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykD-D3-9JJ">
+                                                    <rect key="frame" x="148" y="11" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="6Xs-82-t1p" firstAttribute="leading" secondItem="8nA-p8-ZNo" secondAttribute="leadingMargin" constant="16" id="5aI-n6-dx6"/>
+                                                <constraint firstItem="ykD-D3-9JJ" firstAttribute="leading" secondItem="6Xs-82-t1p" secondAttribute="trailing" constant="69" id="XPZ-E0-JJF"/>
+                                                <constraint firstItem="6Xs-82-t1p" firstAttribute="top" secondItem="8nA-p8-ZNo" secondAttribute="topMargin" constant="3" id="dwx-QF-9Dh"/>
+                                                <constraint firstItem="6Xs-82-t1p" firstAttribute="centerY" secondItem="8nA-p8-ZNo" secondAttribute="centerY" id="kCr-aP-1C2"/>
+                                                <constraint firstItem="ykD-D3-9JJ" firstAttribute="top" secondItem="6Xs-82-t1p" secondAttribute="top" id="lWs-qD-m5w"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label1" destination="6Xs-82-t1p" id="BiL-Hs-3j3"/>
+                                            <outlet property="label2" destination="ykD-D3-9JJ" id="zHs-C2-9AF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ジャンル検索" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWR-bv-dpy">
+                                <rect key="frame" x="249" y="64" width="102" height="21"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.74026007400000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qWR-bv-dpy" firstAttribute="centerX" secondItem="qOR-lH-uy3" secondAttribute="centerX" id="ME0-N9-7lR"/>
+                            <constraint firstAttribute="bottom" secondItem="Kgg-T3-yrx" secondAttribute="bottom" constant="20" symbolic="YES" id="XAc-8X-Dge"/>
+                            <constraint firstItem="qWR-bv-dpy" firstAttribute="centerY" secondItem="qOR-lH-uy3" secondAttribute="centerY" constant="-225.5" id="XQj-Uu-E5C"/>
+                            <constraint firstItem="Kgg-T3-yrx" firstAttribute="centerX" secondItem="qWR-bv-dpy" secondAttribute="centerX" id="aNG-pk-RH8"/>
+                            <constraint firstItem="Kgg-T3-yrx" firstAttribute="leading" secondItem="qOR-lH-uy3" secondAttribute="leadingMargin" id="bl4-nN-ADy"/>
+                            <constraint firstItem="Kgg-T3-yrx" firstAttribute="top" secondItem="qWR-bv-dpy" secondAttribute="bottom" constant="21" id="q8A-bx-L8p"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchResult" destination="Kgg-T3-yrx" id="gWA-HC-5Ra"/>
+                        <segue destination="f4b-8b-qtq" kind="show" identifier="detailSegue" id="zVN-dw-cwc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4D5-kv-Kjc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3878" y="1101"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="3IV-0s-7Cm">
+            <objects>
+                <viewController id="f4b-8b-qtq" customClass="DetailViewController" customModule="Dr_Alea" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0SO-f2-XTW"/>
+                        <viewControllerLayoutGuide type="bottom" id="mil-GT-QA7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Oo-0y-mtM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Srf-Pj-cXw">
+                                <rect key="frame" x="20" y="72" width="560" height="528"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="渡邉腰痛公園" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCF-ff-2Rj">
+                                        <rect key="frame" x="229" y="24" width="102" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RIQ-GU-gWY">
+                                        <rect key="frame" x="160" y="53" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="RWZ-on-aDd"/>
+                                            <constraint firstAttribute="width" constant="240" id="wKs-dO-f0H"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="RIQ-GU-gWY" firstAttribute="top" secondItem="xCF-ff-2Rj" secondAttribute="bottom" constant="8" symbolic="YES" id="3vk-m9-8VW"/>
+                                    <constraint firstAttribute="bottom" secondItem="RIQ-GU-gWY" secondAttribute="bottom" constant="347" id="Hbs-mv-oes"/>
+                                    <constraint firstItem="xCF-ff-2Rj" firstAttribute="centerX" secondItem="RIQ-GU-gWY" secondAttribute="centerX" id="TlT-od-V8f"/>
+                                    <constraint firstItem="xCF-ff-2Rj" firstAttribute="centerX" secondItem="Srf-Pj-cXw" secondAttribute="centerX" id="XG3-LN-m4s"/>
+                                    <constraint firstAttribute="trailing" secondItem="RIQ-GU-gWY" secondAttribute="trailing" constant="160" id="n3i-hh-CMX"/>
+                                    <constraint firstItem="xCF-ff-2Rj" firstAttribute="top" secondItem="Srf-Pj-cXw" secondAttribute="top" constant="24" id="ody-1F-i7C"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.74026007400000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Srf-Pj-cXw" firstAttribute="trailing" secondItem="7Oo-0y-mtM" secondAttribute="trailingMargin" id="3Wb-5a-gdh"/>
+                            <constraint firstItem="mil-GT-QA7" firstAttribute="top" secondItem="Srf-Pj-cXw" secondAttribute="bottom" id="6Mc-Pd-dJg"/>
+                            <constraint firstItem="Srf-Pj-cXw" firstAttribute="top" secondItem="0SO-f2-XTW" secondAttribute="bottom" constant="8" symbolic="YES" id="h0G-H8-l72"/>
+                            <constraint firstItem="Srf-Pj-cXw" firstAttribute="leading" secondItem="7Oo-0y-mtM" secondAttribute="leadingMargin" id="uhD-UD-h8X"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uRB-Ml-9cn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4489" y="43"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rnY-g4-lQu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bCN-nI-t45" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0OR-8P-e0r">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qaS-dO-p3o" kind="relationship" relationship="rootViewController" id="Aon-Ve-oLX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c0A-Y5-XM8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1060" y="377"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="cwZ-kT-nE6"/>
+    </inferredMetricsTieBreakers>
+</document>
